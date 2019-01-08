@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Python" name="Python">
+      <configuration sdkName="Python 3.7 virtualenv at /workings/working_folder/goolexa/.venv" />
+    </facet>
+  </component>
   <component name="Flask">
     <option name="enabled" value="true" />
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/.venv" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/goolexa" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/speech_assets" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/.idea" type="java-resource" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <content url="file://$MODULE_DIR$/.idea" />
+    <content url="file://$MODULE_DIR$/.venv" />
+    <content url="file://$MODULE_DIR$/goolexa" />
+    <content url="file://$MODULE_DIR$/speech_assets" />
+    <content url="file://$MODULE_DIR$/tests" />
+    <orderEntry type="jdk" jdkName="Python 3.7 virtualenv at /workings/working_folder/goolexa/.venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
-    <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
+    <option name="TEMPLATE_CONFIGURATION" value="Django" />
     <option name="TEMPLATE_FOLDERS">
       <list>
         <option value="$MODULE_DIR$/goolexa/templates" />

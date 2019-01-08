@@ -1,7 +1,7 @@
 {
     "languageModel":
     {
-        "invocationName": "goolexa",
+        "invocationName": "good noise",
         "intents": [
         {
             "name": "AMAZON.PauseIntent",
