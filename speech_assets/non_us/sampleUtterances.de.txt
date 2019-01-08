@@ -1,0 +1,114 @@
+GoolexaPlayArtistIntent Spiele {artist_name}
+GoolexaPlayArtistIntent Spiele Lieder von {artist_name}
+GoolexaPlayArtistIntent Spiele top Songs von {artist_name}
+GoolexaPlayArtistIntent Spiele Hits von {artist_name}
+GoolexaPlayArtistIntent Spiele Musik von {artist_name}
+GoolexaPlayArtistIntent Spiele {artist_name} ab
+
+GoolexaPlayAlbumIntent Spiele das Album {album_name}
+GoolexaPlayAlbumIntent Spiele Album {album_name}
+GoolexaPlayAlbumIntent Spiele das Album {album_name} von {artist_name}
+GoolexaPlayAlbumIntent Spiele Album {album_name} von {artist_name}
+GoolexaPlayAlbumIntent Spiele Lieder vom Album {album_name} von {artist_name}
+GoolexaPlayAlbumIntent Spiele Lieder aus dem Album {album_name} von {artist_name}
+
+GoolexaPlaySimilarSongsRadioIntent Spiele ähnliche Lieder
+GoolexaPlaySimilarSongsRadioIntent Spiele Lieder die so sind wie dieses
+GoolexaPlaySimilarSongsRadioIntent Starte ein Radio mit diesem Lied
+
+GoolexaPlaySongIntent Spiele das Lied {song_name}
+GoolexaPlaySongIntent Spiele Lied {song_name}
+GoolexaPlaySongIntent Spiele das Lied {song_name} von {artist_name}
+GoolexaPlaySongIntent Spiele Lied {song_name} von {artist_name}
+GoolexaPlaySongIntent Spiele {song_name}
+GoolexaPlaySongIntent Spiele {song_name} von {artist_name}
+
+GoolexaPlayArtistRadioIntent Starte ein Radio für {artist_name}
+GoolexaPlayArtistRadioIntent Erstelle einen Radiosender für {artist_name}
+GoolexaPlayArtistRadioIntent Starte {artist_name} Radio
+GoolexaPlayArtistRadioIntent Starte Künstlerradio für {artist_name}
+GoolexaPlayArtistRadioIntent Spiele Künstler so ähnlich wie {artist_name}
+
+GoolexaPlaySongRadioIntent Starte ein Radio für das Lied {song_name}
+GoolexaPlaySongRadioIntent Erstelle eine Radiostation für das Lied {song_name}
+GoolexaPlaySongRadioIntent Starte {song_name} Liederradio
+GoolexaPlaySongRadioIntent Starte Radio für {song_name}
+GoolexaPlaySongRadioIntent Spiele Lieder wie {song_name}
+GoolexaPlaySongRadioIntent Spiele Lieder wie {song_name} aus dem Album {album_name}
+GoolexaPlaySongRadioIntent Spiele Lieder wie {song_name} von {artist_name}
+GoolexaPlaySongRadioIntent Spiele Lieder wie {song_name} von {artist_name} aus dem Album {album_name}
+
+GoolexaPlayPlaylistIntent Spiele Playlist {playlist_name}
+GoolexaPlayPlaylistIntent Playlist {playlist_name}
+GoolexaPlayPlaylistIntent Starte Playlist {playlist_name}
+GoolexaPlayPlaylistIntent Spiele Lieder von meiner {playlist_name} Playlist
+GoolexaPlayPlaylistIntent Starte Playlist {playlist_name}
+
+GoolexaPlayIFLRadioIntent Spiele Musik
+GoolexaPlayIFLRadioIntent Spiele Zufallsradio
+GoolexaPlayIFLRadioIntent Spiele zufällige Musik
+GoolexaPlayIFLRadioIntent Spiele meine Musik
+
+GoolexaCurrentlyPlayingIntent Wie heißt das Lied
+GoolexaCurrentlyPlayingIntent Welches Lied läuft gerade
+GoolexaCurrentlyPlayingIntent Was läuft gerade
+GoolexaCurrentlyPlayingIntent Was für ein Lied ist das
+GoolexaCurrentlyPlayingIntent Was ist der Name dieses Liedes
+GoolexaCurrentlyPlayingIntent Was ist das
+
+GoolexaQueueSongIntent Spiel den Song {song_name} als nächstes
+GoolexaQueueSongIntent Spiel als nächstes {song_name}
+GoolexaQueueSongIntent Spiel als nächstes {song_name} von {artist_name}
+GoolexaQueueSongIntent Spiele gleich {song_name} von {artist_name}
+GoolexaQueueSongIntent Als nächstes spiele {song_name}
+GoolexaQueueSongIntent Spiele {song_name} von {artist_name} als nächstes
+GoolexaQueueSongIntent Reihe {song_name} ein
+GoolexaQueueSongIntent Reihe {song_name} von {artist_name} ein
+
+GoolexaThumbsUpIntent Ich mag das
+GoolexaThumbsUpIntent Ich mag dieses Lied
+GoolexaThumbsUpIntent Daumen hoch für das Lied
+GoolexaThumbsUpIntent Das gefällt mir
+GoolexaThumbsUpIntent Tolles Lied
+
+GoolexaThumbsDownIntent Ich mag das nicht
+GoolexaThumbsDownIntent Ich mag dieses Lied nicht
+GoolexaThumbsDownIntent Daumen runter für das Lied
+GoolexaThumbsDownIntent Das gefällt mir nicht
+
+GoolexaPlayThumbsUpIntent Spiele angesagte Lieder
+GoolexaPlayThumbsUpIntent Spiele beliebte Lieder
+GoolexaPlayThumbsUpIntent Spiele Lieder die ich mag
+
+GoolexaListAllAlbumsIntent Welche Alben hat {artist_name} gemacht
+
+GoolexaListLatestAlbumIntent Was sind die neuesten Alben von {artist_name}
+GoolexaListLatestAlbumIntent Was sind die aktuellsten Alben {artist_name}
+
+GoolexaPlayLatestAlbumIntent Spiel das neueste Album von {artist_name}
+
+GoolexaPlayAlbumByArtistIntent Spiele ein Album von {artist_name}
+GoolexaPlayAlbumByArtistIntent Spiele ein Album von der Band {artist_name}
+GoolexaPlayDifferentAlbumIntent Spiele ein anderes Album
+
+GoolexaPlayLibraryIntent Spiele Lieder aus meiner Bibliothek
+GoolexaPlayLibraryIntent Spiele Songs aus meiner Bibliothek
+GoolexaPlayLibraryIntent Spiele meine Musik
+GoolexaPlayLibraryIntent Spiele meine Lieder
+GoolexaPlayLibraryIntent Spiele Lieder aus meiner Musik
+
+GoolexaRestartTracksIntent Starte das Lied neu
+GoolexaRestartTracksIntent Starte das Stück neu
+GoolexaRestartTracksIntent Starte die Playlist neu
+GoolexaRestartTracksIntent Setze die Playlist auf Anfang
+
+GoolexaSkipTo Springe zu {song_name}
+GoolexaSkipTo Springe zu {song_name} von {artist_name}
+GoolexaSkipTo Wechsle zu {song_name}
+GoolexaSkipTo Wechsle zu {song_name} von {artist_name}
+
+GoolexaListAllPlaylists Was für Playlists habe ich
+GoolexaListAllPlaylists Zähle meine Playlists auf
+GoolexaListAllPlaylists nach meinen Playlists
+GoolexaListAllPlaylists welche Playlists habe ich in meiner Bibliothek
+GoolexaListAllPlaylists welche Playlists ich in meiner Bibliothek habe

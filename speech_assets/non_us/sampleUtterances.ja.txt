@@ -1,0 +1,106 @@
+GoolexaPlayArtistIntent {artist_name}の曲を再生して
+GoolexaPlayArtistIntent {artist_name}の曲を再生
+GoolexaPlayArtistIntent アーティストの {artist_name} を再生
+GoolexaPlayArtistIntent {artist_name} の曲を再生
+GoolexaPlayArtistIntent {artist_name} の有名な曲を再生
+GoolexaPlayArtistIntent {artist_name} の音楽を再生
+GoolexaPlayArtistIntent {artist_name} のアルバムを再生
+
+GoolexaPlayAlbumIntent {album_name} のアルバムを再生
+GoolexaPlayAlbumIntent {album_name} のアルバムの曲を再生
+GoolexaPlayAlbumIntent アルバムの {album_name} を再生
+GoolexaPlayAlbumIntent {artist_name} の アルバム {album_name} を再生
+GoolexaPlayAlbumIntent {artist_name} の {album_name} のアルバムを再生
+GoolexaPlayAlbumIntent {artist_name} の {album_name} のアルバムの曲 を再生
+
+GoolexaPlaySimilarSongsRadioIntent 似てる曲を再生
+GoolexaPlaySimilarSongsRadioIntent 似た曲を再生
+GoolexaPlaySimilarSongsRadioIntent この曲のラジオを開始
+
+GoolexaPlaySongIntent {song_name} の曲を再生
+GoolexaPlaySongIntent {artist_name} の {song_name} の曲を再生
+GoolexaPlaySongIntent {artist_name} の曲 {song_name} を再生
+GoolexaPlaySongIntent {song_name} を再生
+GoolexaPlaySongIntent {artist_name} の {song_name} を再生
+
+GoolexaPlayArtistRadioIntent アーティスト {artist_name} のラジオを開始
+GoolexaPlayArtistRadioIntent {artist_name} のアーティストのラジオを開始
+GoolexaPlayArtistRadioIntent {artist_name} のアーティストのラジオステーションを作成
+GoolexaPlayArtistRadioIntent {artist_name} のアーティストラジオを開始
+GoolexaPlayArtistRadioIntent {artist_name} に似たアーティストを再生
+
+GoolexaPlaySongRadioIntent {song_name} の曲のラジオを開始
+GoolexaPlaySongRadioIntent {song_name} の曲のラジオステーションを作成
+GoolexaPlaySongRadioIntent {song_name} に似た曲を再生
+GoolexaPlaySongRadioIntent {artist_name} の {song_name} に似た曲を再生
+GoolexaPlaySongRadioIntent {album_name} の {artist_name} の {song_name} に似た曲を再生
+
+GoolexaPlayPlaylistIntent {playlist_name} のプレイリストを再生
+GoolexaPlayPlaylistIntent プレイリスト {playlist_name}
+GoolexaPlayPlaylistIntent プレイリスト {playlist_name} を再生
+GoolexaPlayPlaylistIntent {playlist_name} のプレイリストを開始
+GoolexaPlayPlaylistIntent {playlist_name} のプレイリストの曲を再生
+
+GoolexaQueueSongIntent {song_name} の曲を次に再生
+GoolexaQueueSongIntent {song_name} を次に再生
+GoolexaQueueSongIntent {artist_name} の {song_name} を次に再生
+GoolexaQueueSongIntent {artist_name} の曲 {song_name} を次に再生
+GoolexaQueueSongIntent {artist_name} の {song_name} の曲を次に再生
+GoolexaQueueSongIntent {song_name} をキューに追加
+GoolexaQueueSongIntent {artist_name} の {song_name} をキューに追加
+
+GoolexaListAllAlbumsIntent {artist_name} のアルバムを教えて
+
+GoolexaListLatestAlbumIntent {artist_name} の最新のアルバムを教えて
+GoolexaListLatestAlbumIntent {artist_name} の最新のアルバムは
+
+GoolexaPlayLatestAlbumIntent {artist_name} の最新のアルバムを再生
+
+GoolexaPlayAlbumByArtistIntent {artist_name} のバンドのアルバムを再生
+GoolexaPlayAlbumByArtistIntent {artist_name} のアルバムを再生
+
+GoolexaSkipTo {song_name} にスキップ
+GoolexaSkipTo {artist_name} の {song_name} にスキップ
+
+GoolexaPlayIFLRadioIntent 音楽をかけて
+GoolexaPlayIFLRadioIntent 音楽を再生して
+GoolexaPlayIFLRadioIntent 曲をかけて
+GoolexaPlayIFLRadioIntent 曲を再生して
+GoolexaPlayIFLRadioIntent アイムフィーリングラッキーを再生
+GoolexaPlayIFLRadioIntent ラジオステーションを再生
+GoolexaPlayIFLRadioIntent ラジオステーションを開始
+
+GoolexaPlayLibraryIntent ライブラリーの曲を再生
+GoolexaPlayLibraryIntent ライブラリーの楽曲を再生
+GoolexaPlayLibraryIntent ライブラリーを再生
+
+GoolexaCurrentlyPlayingIntent この曲は何
+GoolexaCurrentlyPlayingIntent この曲について教えて
+GoolexaCurrentlyPlayingIntent 今流れている曲は
+GoolexaCurrentlyPlayingIntent 何が流れてる
+GoolexaCurrentlyPlayingIntent この曲の名前は
+GoolexaCurrentlyPlayingIntent これは何
+
+GoolexaRestartTracksIntent もう一度再生
+GoolexaRestartTracksIntent プレイリストをもう一度再生
+GoolexaRestartTracksIntent 最初の曲まで戻って
+
+GoolexaThumbsUpIntent お気に入りに追加
+GoolexaThumbsUpIntent この曲を高評価
+GoolexaThumbsUpIntent この曲を高く評価
+
+GoolexaPlayThumbsUpIntent お気に入りの曲を再生
+GoolexaPlayThumbsUpIntent お気に入りを再生
+GoolexaPlayThumbsUpIntent 高評価した曲を再生
+GoolexaPlayThumbsUpIntent 高く評価した曲を再生
+
+GoolexaThumbsDownIntent この曲を低く評価
+GoolexaThumbsDownIntent この曲に低評価して
+GoolexaThumbsDownIntent この曲を低評価
+GoolexaThumbsDownIntent この曲は嫌い
+
+GoolexaPlayDifferentAlbumIntent 違うアルバムを再生
+
+GoolexaListAllPlaylists どんなプレイリストがある
+GoolexaListAllPlaylists プレイリストを教えて
+GoolexaListAllPlaylists プレイリストをリストアップ

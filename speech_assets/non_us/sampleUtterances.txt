@@ -1,0 +1,119 @@
+GoolexaPlayArtistIntent Play artist {artist_name}
+GoolexaPlayArtistIntent Play songs by {artist_name}
+GoolexaPlayArtistIntent Play top songs by {artist_name}
+GoolexaPlayArtistIntent Play top tracks by {artist_name}
+GoolexaPlayArtistIntent Play music by {artist_name}
+GoolexaPlayArtistIntent Play tracks by {artist_name}
+
+GoolexaPlayAlbumIntent Play the album {album_name}
+GoolexaPlayAlbumIntent Play album {album_name}
+GoolexaPlayAlbumIntent Play the album {album_name} by {artist_name}
+GoolexaPlayAlbumIntent Play album {album_name} by {artist_name}
+GoolexaPlayAlbumIntent Play songs from the album {album_name} by {artist_name}
+
+GoolexaPlaySimilarSongsRadioIntent Play similar songs
+GoolexaPlaySimilarSongsRadioIntent Play songs like this
+GoolexaPlaySimilarSongsRadioIntent Start radio with this song
+
+GoolexaPlaySongIntent Play the song {song_name}
+GoolexaPlaySongIntent Play song {song_name}
+GoolexaPlaySongIntent Play the song {song_name} by {artist_name}
+GoolexaPlaySongIntent Play song {song_name} by {artist_name}
+GoolexaPlaySongIntent Play {song_name}
+GoolexaPlaySongIntent Play {song_name} by {artist_name}
+
+GoolexaPlayArtistRadioIntent Start radio for artist {artist_name}
+GoolexaPlayArtistRadioIntent Create a radio station for artist {artist_name}
+GoolexaPlayArtistRadioIntent Start {artist_name} artist radio
+GoolexaPlayArtistRadioIntent Start artist radio for {artist_name}
+GoolexaPlayArtistRadioIntent Play artists like {artist_name}
+
+GoolexaPlaySongRadioIntent Start radio for song {song_name}
+GoolexaPlaySongRadioIntent Create a radio station for song {song_name}
+GoolexaPlaySongRadioIntent Start {song_name} song radio
+GoolexaPlaySongRadioIntent Start song radio for {song_name}
+GoolexaPlaySongRadioIntent Play songs like {song_name}
+GoolexaPlaySongRadioIntent Play songs like {song_name} from {album_name}
+GoolexaPlaySongRadioIntent Play songs like {song_name} by {artist_name}
+GoolexaPlaySongRadioIntent Play songs like {song_name} by {artist_name} from {album_name}
+
+GoolexaPlayPlaylistIntent Play {playlist_name} playlist
+GoolexaPlayPlaylistIntent Playlist {playlist_name}
+GoolexaPlayPlaylistIntent Start playlist {playlist_name}
+GoolexaPlayPlaylistIntent Play songs from my {playlist_name} playlist
+GoolexaPlayPlaylistIntent Play playlist {playlist_name}
+
+GoolexaPlayIFLRadioIntent Play some music
+GoolexaPlayIFLRadioIntent Play I'm feeling lucky station
+GoolexaPlayIFLRadioIntent Play my radio station
+GoolexaPlayIFLRadioIntent Play my station
+
+GoolexaCurrentlyPlayingIntent What is the current song
+GoolexaCurrentlyPlayingIntent What is currently playing
+GoolexaCurrentlyPlayingIntent What is playing right now
+GoolexaCurrentlyPlayingIntent What song is this
+GoolexaCurrentlyPlayingIntent What is the name of this song
+GoolexaCurrentlyPlayingIntent What is this
+
+GoolexaQueueSongIntent Next play the song {song_name}
+GoolexaQueueSongIntent Next play song {song_name}
+GoolexaQueueSongIntent Next play the song {song_name} by {artist_name}
+GoolexaQueueSongIntent Next play song {song_name} by {artist_name}
+GoolexaQueueSongIntent Next play {song_name}
+GoolexaQueueSongIntent Next play {song_name} by {artist_name}
+GoolexaQueueSongIntent Queue {song_name}
+GoolexaQueueSongIntent Queue {song_name} by {artist_name}
+
+GoolexaThumbsUpIntent Up vote
+GoolexaThumbsUpIntent Up vote this
+GoolexaThumbsUpIntent Thumbs up this song
+GoolexaThumbsUpIntent Thumbs up
+GoolexaThumbsUpIntent Like this song
+
+GoolexaThumbsDownIntent Down vote
+GoolexaThumbsDownIntent Down vote this
+GoolexaThumbsDownIntent Thumbs down this song
+GoolexaThumbsDownIntent Thumbs down
+GoolexaThumbsDownIntent Dislike this song
+
+GoolexaPlayThumbsUpIntent Play promoted songs
+GoolexaPlayThumbsUpIntent Play up voted songs
+GoolexaPlayThumbsUpIntent Play thumbs up songs
+
+GoolexaListAllAlbumsIntent List all albums by {artist_name}
+
+GoolexaListLatestAlbumIntent List the latest albums by {artist_name}
+GoolexaListLatestAlbumIntent What are latest albums by {artist_name}
+
+GoolexaPlayLatestAlbumIntent Play the latest album by {artist_name}
+
+GoolexaPlayAlbumByArtistIntent Play an album by the band {artist_name}
+GoolexaPlayAlbumByArtistIntent Play an album by artist {artist_name}
+GoolexaPlayDifferentAlbumIntent Play a different album
+
+GoolexaPlayLibraryIntent play songs from my library
+GoolexaPlayLibraryIntent play tracks from my library
+GoolexaPlayLibraryIntent play my library
+GoolexaPlayLibraryIntent start playing tracks from my library
+GoolexaPlayLibraryIntent play songs from library
+
+GoolexaRestartTracksIntent Restart tracks
+GoolexaRestartTracksIntent Restart songs
+GoolexaRestartTracksIntent Restart the playlist
+GoolexaRestartTracksIntent Reset the playlist to the beginning
+
+GoolexaSkipTo Skip to {song_name}
+GoolexaSkipTo Skip to {song_name} by {artist_name}
+GoolexaSkipTo Go to {song_name}
+GoolexaSkipTo Go to {song_name} by {artist_name}
+GoolexaSkipTo Skip to the song {song_name}
+GoolexaSkipTo Skip to the song {song_name} by {artist_name}
+GoolexaSkipTo Jump to {song_name}
+GoolexaSkipTo Jump to {song_name} by {artist_name}
+
+GoolexaListAllPlaylists what playlists do I have
+GoolexaListAllPlaylists list my playlists
+GoolexaListAllPlaylists to list my playlists
+GoolexaListAllPlaylists tell me what playlists are in my library
+GoolexaListAllPlaylists to list my playlists
+GoolexaListAllPlaylists list playlists

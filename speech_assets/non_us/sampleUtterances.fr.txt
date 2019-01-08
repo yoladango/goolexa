@@ -1,0 +1,118 @@
+GoolexaPlayArtistIntent lis l'artiste {artist_name}
+GoolexaPlayArtistIntent Jouer des chansons de {artist_name}
+GoolexaPlayArtistIntent Jouer les meilleures chansons de {artist_name}
+GoolexaPlayArtistIntent Lecture des premières pistes de {artist_name}
+GoolexaPlayArtistIntent Jouer de la musique de {artist_name}
+GoolexaPlayArtistIntent Lecture des pistes de {artist_name}
+
+GoolexaPlayAlbumIntent Jouer l'album {album_name}.
+GoolexaPlayAlbumIntent lis album {album_name}.
+GoolexaPlayAlbumIntent Jouer l'album {album_name} de {artist_name}
+GoolexaPlayAlbumIntent lis album {album_name} de {artist_name}
+GoolexaPlayAlbumIntent Lecture des chansons de l'album {album_name} de {artist_name}
+
+GoolexaPlaySimilarSongsRadioIntent Jouer des chansons similaires
+GoolexaPlaySimilarSongsRadioIntent Jouer des chansons comme celle-ci
+GoolexaPlaySimilarSongsRadioIntent Démarrer la radio avec cette chanson
+
+GoolexaPlaySongIntent Jouer la chanson {song_name}
+GoolexaPlaySongIntent lire la chanson {song_name}
+GoolexaPlaySongIntent Jouer la chanson {song_name} de {artist_name}
+GoolexaPlaySongIntent lire la chanson {song_name} de {artist_name}
+GoolexaPlaySongIntent lis {song_name}
+GoolexaPlaySongIntent lis {song_name} de {artist_name}
+GoolexaPlaySongIntent met {song_name}
+GoolexaPlaySongIntent met la chanson {song_name} de {artist_name}
+
+GoolexaPlayArtistRadioIntent Démarrer la radio pour l'artiste {artist_name}
+GoolexaPlayArtistRadioIntent Créer une station de radio pour l'artiste {artist_name}
+GoolexaPlayArtistRadioIntent demarrer la radio de {artist_name}
+GoolexaPlayArtistRadioIntent Démarrer la radio de l'artiste pour {artist_name}
+GoolexaPlayArtistRadioIntent Jouer des artistes comme {artist_name}
+
+GoolexaPlaySongRadioIntent Démarrer la radio pour la chanson {song_name}
+GoolexaPlaySongRadioIntent Créer une station de radio pour la chanson {song_name}
+GoolexaPlaySongRadioIntent Start {song_name} song_name} song radio
+GoolexaPlaySongRadioIntent Démarrer la chanson radio pour {song_name}
+GoolexaPlaySongRadioIntent Jouer des chansons comme {song_name}
+GoolexaPlaySongRadioIntent Jouer des chansons comme {song_name} à partir de {album_name}
+GoolexaPlaySongRadioIntent Jouer des chansons comme {song_name} de {artist_name}
+GoolexaPlaySongRadioIntent Jouer des chansons comme {song_name} de {artist_name} à partir de {album_name}
+
+GoolexaPlayPlaylistIntent lis {playlist_name} liste de lecture
+GoolexaPlayPlaylistIntent playlist {playlist_name}
+GoolexaPlayPlaylistIntent Démarrer la playlist {playlist_name}
+GoolexaPlayPlaylistIntention de jouer des chansons de ma liste de lecture {playlist_name}
+GoolexaPlayPlaylistIntent lis playlist {playlist_name}
+
+GoolexaPlayIFLRadioIntention de jouer de la musique
+GoolexaPlayIFLRadioIntent lis I'm feeling lucky station
+GoolexaPlayIFLRadioIntent Jouer ma station de radio
+GoolexaPlayIFLRadioIntent Jouer ma station
+
+GoolexaCurrentlyPlayingIntent Quelle est la chanson actuelle ?
+GoolexaCurrentlyPlayingIntent Ce qui joue actuellement
+GoolexaCurrentlyPlayingIntent Ce qui est en train de jouer maintenant
+GoolexaCurrentlyPlayingIntent Quelle est cette chanson ?
+GoolexaCurrentlyPlayingIntent Quel est le nom de cette chanson ?
+GoolexaCurrentlyPlayingIntent Qu'est-ce que c'est ?
+
+GoolexaQueueSongIntent lis la chanson suivante {song_name}
+GoolexaQueueSongIntent chanson suivante {song_name}
+GoolexaQueueSongIntent Lecture suivante de la chanson {song_name} de {artist_name}
+GoolexaQueueSongIntent lis la chanson {song_name} par {artist_name}
+GoolexaQueueSongIntent lis {song_name}
+GoolexaQueueSongIntent Jouer la chanson {song_name} de {artist_name}
+GoolexaQueueSongIntent ajouter a la liste de lecture {song_name}
+GoolexaQueueSongIntent ajouter a la suite {song_name} de {artist_name}
+
+GoolexaThumbsUpIntent Up vote
+GoolexaThumbsUpIntent Vote positif
+GoolexaThumbsUpIntent j'aime cette chanson
+GoolexaThumbsUpIntent j'aime
+GoolexaThumbsUpIntent pouce en l'air pour cette chanson
+
+GoolexaThumbsDownIntent Vote à la baisse
+GoolexaThumbsDownIntent Down vote this
+GoolexaThumbsDownIntent Thumbs down this song
+GoolexaThumbsDownIntention Pouces vers le bas
+GoolexaThumbsDownIntention je n'aime pas cette chanson
+
+GoolexaPlayThumbsUpIntent lis chansons promues
+GoolexaPlayThumbsUpIntent Jouez les chansons votées.
+GoolexaPlayThumbsUpIntent lis thumbs up songs
+
+GoolexaListAllAlbumsIntent Liste de tous les albums de {artist_name}
+
+GoolexaListLatestAlbumIntent Liste des derniers albums de {artist_name}
+GoolexaListLatestAlbumIntent Quels sont les derniers albums de {artist_name} ?
+
+GoolexaPlayLatestAlbumIntent Jouez le dernier album de {artist_name}
+
+GoolexaPlayAlbumByArtistIntent Jouez un album du groupe {artist_name}
+GoolexaPlayAlbumByArtistIntent Jouer un album de artiste {artist_name}
+GoolexaPlayDifferentAlbumIntent Jouer un autre album
+
+GoolexaPlayLibraryIntention jouer des chansons de ma bibliothèque
+GoolexaPlayLibraryLibraryLecture pistes de ma bibliothèque
+GoolexaPlayLibraryIntent jouer ma bibliothèque
+GoolexaPlayLibraryIntention commencer à lire les pistes de ma bibliothèque.
+GoolexaPlayLibraryIntention jouer des chansons de la bibliothèque
+
+GoolexaRestartTracksIntent redemarre la chanson
+GoolexaRestartTracksIntent redemarre la musique
+GoolexaRestartTracksIntent Redémarre la liste de lecture
+GoolexaRestartTracksIntent Reprendre la liste de lecture du début.
+GoolexaRestartTracksIntent Reprendre la chanson du début
+GoolexaRestartTracksIntent Reprendre la musique du début
+GoolexaRestartTracksIntent Reprendre la liste de lecture du début
+GoolexaRestartTracksIntent redemarre la liste de lecture du début.
+
+GoolexaSkipTo Aller à {song_name} de {artist_name}
+GoolexaSkipTo Aller à {song_name}
+GoolexaSkipTo Aller à {song_name} de {artist_name}
+
+GoolexaListAllPlaylists quelles listes de lecture ai-je ?
+GoolexaListAllPlaylists lister mes playlists
+GoolexaListAllPlaylists pour lister mes playlists
+GoolexaListAllPlaylists quelles listes de lecture se trouvent dans ma bibliothèque
