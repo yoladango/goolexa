@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7418d239-d99d-47d3-865e-c35c5b9b9cb1" name="Default Changelist" comment="">
+    <list default="true" id="7418d239-d99d-47d3-865e-c35c5b9b9cb1" name="Default Changelist" comment="works now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +25,7 @@
     <SUITE FILE_PATH="coverage/goolexa$music.coverage" NAME="music Coverage Results" MODIFIED="1546986587561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/goolexa/utils" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -47,6 +47,11 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="69af82ec3b3a33c30030ac236a8c3996d35e9bd6" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -102,7 +107,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547552472132" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547553206664" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
@@ -280,9 +285,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Unittests in test_functional.py" />
-        <item itemvalue="Python.run_tests" />
         <item itemvalue="Python tests.Unittests in test" />
         <item itemvalue="Python.utils" />
+        <item itemvalue="Python.run_tests" />
         <item itemvalue="Python.__main__" />
       </list>
     </recent_temporary>
@@ -304,7 +309,7 @@
       <workItem from="1546982220216" duration="5902000" />
       <workItem from="1547526799623" duration="51000" />
       <workItem from="1547526890323" duration="2653000" />
-      <workItem from="1547550155423" duration="2083000" />
+      <workItem from="1547550155423" duration="2836000" />
     </task>
     <task id="LOCAL-00001" summary="polish">
       <created>1546941793581</created>
@@ -334,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1547552370605</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="works now">
+      <created>1547552641470</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1547552641470</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -367,7 +379,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21714000" />
+    <option name="totallyTimeSpent" value="22467000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -400,7 +412,7 @@
       <window_info anchor="bottom" id="CSS-X-Fire" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.5058698" side_tool="true" visible="true" weight="0.33143508" />
       <window_info anchor="bottom" id="Docker" order="10" sideWeight="0.49733192" weight="0.32801822" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50027215" side_tool="true" weight="0.3997722" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5058698" side_tool="true" weight="0.33143508" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.4941302" visible="true" weight="0.33143508" />
       <window_info anchor="bottom" id="Tail" order="14" />
