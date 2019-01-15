@@ -10,6 +10,12 @@ from gmusicapi import CallFailure, Mobileclient
 
 class GMusicWrapper(object):
     def __init__(self, username, password, logger=None):
+        self.indexing_thread = threading.Thread(
+            target=self.index_library
+        )
+        self.artists = set([])
+        self.albums = set([])
+        self.library = {}
         self._api = Mobileclient()
         self.logger = logger
         success = self._api.login(username, password, getenv('ANDROID_ID', Mobileclient.FROM_MAC_ADDRESS))
@@ -20,22 +26,16 @@ class GMusicWrapper(object):
         try:
             assert literal_eval(getenv("DEBUG_FORCE_LIBRARY", "False"))
             self.use_store = False
-        except (AssertionError, ValueError):  # AssertionError if it's False, ValueError if it's not set / not set to a proper boolean string
+        except (AssertionError, ValueError):  # AssertionError if False, ValueError if not a proper boolean string
             self.use_store = self._api.is_subscribed
         # Populate our library
         self.start_indexing()
 
     def start_indexing(self):
-        self.library = {}
-        self.albums = set([])
-        self.artists = set([])
-        self.indexing_thread = threading.Thread(
-            target=self.index_library
-        )
         self.indexing_thread.start()
 
     def log(self, log_str):
-        if self.logger != None:
+        if self.logger is not None:
             self.logger.debug(log_str)
 
     def _search(self, query_type, query):
@@ -88,8 +88,7 @@ class GMusicWrapper(object):
             return self._api.get_artist_info(search[0]['artistId'],
                                              max_top_tracks=100)
         else:
-            search = {}
-            search['topTracks'] = []
+            search = {'topTracks': []}
             # Find the best artist we have, and then match songs to that artist
             likely_artist, score = process.extractOne(name, self.artists)
             if score < 70:
@@ -102,7 +101,7 @@ class GMusicWrapper(object):
                         search['name'] = song['artist']
                         search['artistId'] = song['artistId']
                     search['topTracks'].append(song)
-            random.shuffle(search['topTracks'])  # This is all music, not top, but the user probably would prefer it shuffled.
+            random.shuffle(search['topTracks'])  # This is all music, not top, but the user would prefer it shuffled.
             if not search['topTracks']:
                 return False
 
@@ -120,8 +119,7 @@ class GMusicWrapper(object):
 
             return self._api.get_album_info(search[0]['albumId'])
         else:
-            search = {}
-            search['tracks'] = []
+            search = {'tracks': []}
             if artist_name:
                 artist_name, score = process.extractOne(artist_name, self.artists)
                 if score < 70:
@@ -193,7 +191,6 @@ class GMusicWrapper(object):
                         return search[i]
             return search[0]
         else:
-            search = {}
             if not name:
                 return False
             if artist_name:
@@ -204,7 +201,14 @@ class GMusicWrapper(object):
                 album_name, score = process.extractOne(album_name, self.albums)
                 if score < 70:
                     return False
-            possible_songs = {song_id: song['title'] for song_id, song in self.library.items() if (not artist_name or ('artist' in song and song['artist'].lower() == artist_name.lower())) and (not album_name or ('album' in song and song['album'].lower() == album_name.lower()))}
+            possible_songs = {song_id: song['title'] for song_id, song in self.library.items()
+                              if (not artist_name
+                                  or ('artist' in song and song['artist'].lower() == artist_name.lower())
+                                  )
+                              and (not album_name
+                                   or ('album' in song and song['album'].lower() == album_name.lower())
+                                   )
+                              }
             song, score, song_id = process.extractOne(name.lower(), possible_songs)
             if score < 70:
                 return False
@@ -228,10 +232,12 @@ class GMusicWrapper(object):
     def get_google_stream_url(self, song_id):
         return self._api.get_stream_url(song_id)
 
-    def get_stream_url(self, song_id):
+    @staticmethod
+    def get_stream_url(song_id):
         return "%s/alexa/stream/%s" % (getenv('APP_URL'), song_id)
 
-    def get_thumbnail(self, artist_art):
+    @staticmethod
+    def get_thumbnail(artist_art):
         return artist_art.replace("http://", "https://")
 
     def get_all_user_playlist_contents(self):

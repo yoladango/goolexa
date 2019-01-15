@@ -211,8 +211,7 @@ def play_song_radio(song_name, artist_name, album_name):
     else:
         album = api.get_album(song['album'])
 
-    station_id = api.get_station("%s Radio" %
-                                 song['title'],
+    station_id = api.get_station("%s Radio" % song['title'],
                                  track_id=song['storeId'],
                                  artist_id=artist['artistId'],
                                  album_id=album['albumId'])
@@ -260,6 +259,9 @@ def play_artist_radio(artist_name):
 
     # Get a streaming URL for the top song
     stream_url = api.get_stream_url(first_song_id)
+
+    # Fetch the album
+    album = api.get_album(artist['album'])
 
     if "albumArtRef" in album:
         thumbnail = api.get_thumbnail(album['albumArtRef'])
@@ -356,10 +358,11 @@ def queue_song(song_name, artist_name):
 @ask.intent("GoolexaListAllAlbumsIntent")
 def list_album_by_artists(artist_name):
     # TODO -- can we do this without a subscription?
+    api = GMusicWrapper.generate_api()
+
     if not api.use_store:
         return statement(render_template("not_supported_without_store"))
 
-    api = GMusicWrapper.generate_api()
     artist_album_list = api.get_artist_album_list(artist_name=artist_name)
     return statement(artist_album_list)
 
@@ -367,10 +370,12 @@ def list_album_by_artists(artist_name):
 @ask.intent("GoolexaListLatestAlbumIntent")
 def list_latest_album_by_artist(artist_name):
     # TODO -- can we do this without a subscription?
+
     if not api.use_store:
         return statement(render_template("not_supported_without_store"))
 
-    api = GMusicWrapper.generate_api()
+    # api = GMusicWrapper.generate_api()
+
     latest_album = api.get_latest_artist_albums(artist_name=artist_name)
     return statement(latest_album)
 
@@ -378,10 +383,12 @@ def list_latest_album_by_artist(artist_name):
 @ask.intent("GoolexaPlayLatestAlbumIntent")
 def play_latest_album_by_artist(artist_name):
     # TODO -- can we do this without a subscription?
+
     if not api.use_store:
         return statement(render_template("not_supported_without_store"))
 
-    api = GMusicWrapper.generate_api()
+    # api = GMusicWrapper.generate_api()
+
     latest_album = api.get_latest_album(artist_name)
 
     if latest_album is False:
@@ -401,8 +408,10 @@ def play_latest_album_by_artist(artist_name):
 
 @ask.intent("GoolexaPlayAlbumByArtistIntent")
 def play_album_by_artist(artist_name):
-    api = GMusicWrapper.generate_api()
+
     album = api.get_album_by_artist(artist_name=artist_name)
+
+    # api = GMusicWrapper.generate_api()
 
     if album is False:
         return statement(render_template("no_album"))
@@ -425,7 +434,7 @@ def play_different_album():
     if not api.use_store:
         return statement(render_template("not_supported_without_store"))
 
-    api = GMusicWrapper.generate_api()
+    # api = GMusicWrapper.generate_api()
 
     current_track = queue.current_track()
 
