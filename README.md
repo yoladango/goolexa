@@ -3,13 +3,16 @@
 
 Goolexa is an Alexa skill which bridges Google Music and Amazon's Alexa. It hopes to rescue all of those who want an Echo/Dot but don't want to switch off of Google Music or pay extra for an Amazon Music Unlimited subscription.
 
-This project is still in its early phases and subject to a bit of change, however it is functional and ready for use! The only catch is that you'll need to run it on your own server for the time being (ideally I'll eventually release this on the Alexa Skills marketplace, but there's a lot of work to do before then). This means that you should be familiar with how to set up your own HTTPS web server for now.
+~~This project is still in its early phases and subject to a bit of change, however it is functional and ready for use! The only catch is that you'll need to run it on your own server for the time being (ideally I'll eventually release this on the Alexa Skills marketplace, but there's a lot of work to do before then). This means that you should be familiar with how to set up your own HTTPS web server for now.~~
+
+_This is a fork of stevenleeg/geemusic that includes some additional setup instructions since, apparently, the original readme.md has not been updated in some time. There's a section on adding Device IDs that should be of considerable interest. All edits follow ~~strikethrough~~ text._
+
 
 ### Notes
 
 **This Skill is not made by nor endorsed by Google.** That being said, it is based off of the wonderful [gmusicapi](https://github.com/simon-weber/gmusicapi) by [Simon Weber](https://simon.codes), which has been around since 2012, so this should work as long as Google doesn't decide to lock down its APIs in a major way.
 
-**The use of 2FA (2-Factory Authentication) and an app-specific password are highly recommended.** If you fail to use an app-specifc password and 2FA, Google may ask you to reset your password until you use one. There have been multiple reports of logins failed bacause of the failure to follow this step. More info about app-specific passwords [here](https://support.google.com/accounts/answer/185833) and 2FA [here](https://support.google.com/accounts/answer/185839).
+~~**The use of 2FA (2-Factory Authentication) and an app-specific password are highly recommended.** If you fail to use an app-specifc password and 2FA, Google may ask you to reset your password until you use one. There have been multiple reports of logins failed bacause of the failure to follow this step.~~ _2FA and app password are required._ More info about app-specific passwords [here](https://support.google.com/accounts/answer/185833) and 2FA [here](https://support.google.com/accounts/answer/185839).
 
 ### Supported Echo languages
 
@@ -21,7 +24,7 @@ There is a workaround for English(UK) and Japanese users if they setup the Skill
 This language issue only affects the Echo/Amazon side of things and not your Google Music account [#100](https://github.com/stevenleeg/geemusic/issues/100)
 
 ## Features
-What can this puppy do, you might ask? Here's a list of example phrases that you can try once you get Goolexa up and running. Remember that each of these phrases needs to be prefixed with "Alexa, tell Geemusic to..." in order for Alexa to know that you're requesting music from Goolexa, not the built-in music services. They're also fuzzy, so feel free to try slight variations of phrases to see if they'll work.
+What can this puppy do, you might ask? Here's a list of example phrases that you can try once you get Goolexa up and running. Remember that each of these phrases needs to be prefixed with "Alexa, tell Goolexa to..." in order for Alexa to know that you're requesting music from Goolexa, not the built-in music services. They're also fuzzy, so feel free to try slight variations of phrases to see if they'll work.
 
 ### Currently Implemented
 ```
@@ -79,7 +82,7 @@ Let's start out by getting the Goolexa server running on your machine. Before yo
 First things first, clone this repository to your server:
 
 ```bash
-$ git clone https://github.com/stevenleeg/geemusic.git
+$ git clone https://github.com/yoladango/goolexa.git
 ```
 
 Next make sure you have Python 3 installed and `cd` in and install the dependencies, you ideally want to do this within a `virtualenv` if you have it installed, but otherwise you can omit those steps and just run the `pip3 install` line. Note that some of the dependencies require a few packages that you may not already have on your system: `python3-dev`, `libssl-dev`, and `libffi-dev`. On Ubuntu these can be installed by running `sudo apt-get install python3-dev libssl-dev libffi-dev`.
@@ -89,7 +92,8 @@ Next make sure you have Python 3 installed and `cd` in and install the dependenc
 $ virtualenv .venv
 $ source .venv/bin/activate
 
-# Continue on if you have virtualenv or start here if you don't:
+# Continue on if you have virtualenv or start here if you don't.
+# Make sure you are within the virtualenv when executing the following command:
 $ pip3 install -r requirements.txt
 ```
 
@@ -106,13 +110,18 @@ APP_URL=https://alexa-geemusic.stevegattuso.me
 # Debug mode: Set to True or False
 DEBUG_MODE=False
 DEBUG_FORCE_LIBRARY=False  # Forces a subscribed user to use local library playback, rather than the default Store
+
+# Very important... Find a valid device ID!! If you leave the
+# 'ANDROID_ID=' blank when you start foreman the first time, 
+# you'll get a list of valid device ids in your log/console.
+ANDROID_ID=valid-device-id
 ```
 
-I would *highly reccomend* that you enable 2-factor authentication on your Google account and only insert an application specific password into this file. Remember that it is stored in plaintext on your local computer! (TODO: fix this!)
+~~I would *highly recommend* that you enable 2-factor authentication on your Google account and only insert an application specific password into this file. Remember that it is stored in plaintext on your local computer! (TODO: fix this!)~~
 
-Once you have your `.env` file ready to go, let's start the server. I personally use [Foreman](https://github.com/ddollar/foreman) to run the server, as it will automatically load the `.env` file into my environment and boot up the webserver. There are surely other ways of doing this, but if you'd like to follow my lead you can run `gem install foreman`.
+Once you have your `.env` file ready to go, let's start the server. I personally use [Foreman](https://github.com/ddollar/foreman) to run the server, as it will automatically load the `.env` file into my environment and boot up the webserver. There are surely other ways of doing this, but if you'd like to follow my lead you can run `gem install foreman`. 
 
-Once `foreman` is ready to go, simply run
+Once `foreman` is ready to go, make sure you are inside your virtualenv and simply run
 
 ```bash
 $ foreman start
@@ -135,7 +144,7 @@ Going through the various sections
 | Skill Type | Custom Interaction Model |
 | Language | Select US English, UK English or Japanese |
 | Name | Gee Music |
-| Invocation Name | gee music |
+| Invocation Name | good sound |
 | Audio Player | Yes |
 
 ### Interaction model
@@ -169,7 +178,7 @@ If using [ngrok](https://ngrok.com/) or [heroku](https://heroku.com) select the 
 
 ### Test
 
-Scroll down to the "Service Simulator" section, the check the Skill is talking to Alexa correcty enter the word help  _"help"_ then click "Ask Gee Music", and you'll ideally see some resulting JSON in the Service Response box. You can then try testing phrases like_"Play album In Rainbows by Radiohead"_
+Scroll down to the "Service Simulator" section to check that the Skill is talking to Alexa correctly; enter the word  _"help"_ then click "Ask Gee Music", and you'll ideally see some resulting JSON in the Service Response box. You can then try testing phrases like _"Play album In Rainbows by Radiohead"_
 
 ### Publishing Information, Privacy & Compliance
 
@@ -196,6 +205,7 @@ Once you've named your app and the code has been deployed, the next step is to c
 | GOOGLE_EMAIL  | YOUR_EMAIL |
 | GOOGLE_PASSWORD  | YOUR_PASSWORD  |
 | APP_URL | https://[heroku_app_name].herokuapp.com |
+| ANDROID_ID | valid-device-id |
 | DEBUG_MODE | false |
 
 At this point, your server should by live and ready to start accepting requests at `https://[heroku_app_name].herokuapp.com/alexa.` Note, that while using the free tier, you may experience timeout errors when you server has received no requests for over 30 minutes. However, you can use a service, such as [Kaffeine](http://kaffeine.herokuapp.com/) to minimize your downtime.
@@ -207,13 +217,13 @@ If you have docker running on a server, running this server as a docker containe
 First, clone this repository.
 
 ```bash
-$ git clone https://github.com/stevenleeg/geemusic.git
+$ git clone https://github.com/yoladango/goolexa.git
 ```
 
-Now, `cd` in and build the container. We'll tag it 'geemusic', but you can call it whatever you want.
+Now, `cd` in and build the container. We'll tag it 'goolexa', but you can call it whatever you want.
 
 ```bash
-$ docker build -t geemusic .
+$ docker build -t goolexa .
 ```
 
 Finally, run the container with the appropriate environment variables and port forwards. Alternatively set up a compose file or your orchestration engine, but those are outside the scope of this readme.
@@ -300,6 +310,8 @@ Flask Ask used to have a bug that would not resume the song from the correct off
 
 ### Music won't start playing
 Issues where Alexa responds to your requests but doesn't play music are generally caused by the `APP_URL` environment variable being set improperly. Be sure that it is set to something like `APP_URL=https://ff9b5cce.ngrok.io` **without a trailing slash or `/alexa`**.
+
+Also, you need to have a valid `ANDROID_ID`!!
 
 ## Contributing
 Please feel free to open an issue or PR if you've found a bug. If you're looking to implement a feature, please open an issue before creating a PR so I can review it and make sure it's something that should be added.
