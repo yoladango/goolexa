@@ -49,9 +49,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="69af82ec3b3a33c30030ac236a8c3996d35e9bd6" />
+        <entry key="$PROJECT_DIR$" value="4f1648ed24b38f5aed309a7e205af28583ff8a34" />
       </map>
     </option>
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -379,7 +380,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22467000" />
+    <option name="totallyTimeSpent" value="22858000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -410,11 +411,11 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4997281" weight="0.32962137" />
       <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49733192" weight="0.32801822" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.5058698" side_tool="true" visible="true" weight="0.33143508" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.5058698" side_tool="true" weight="0.33143508" />
       <window_info anchor="bottom" id="Docker" order="10" sideWeight="0.49733192" weight="0.32801822" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5058698" side_tool="true" weight="0.33143508" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.506937" side_tool="true" visible="true" weight="0.33143508" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.4941302" visible="true" weight="0.33143508" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.49306297" visible="true" weight="0.33143508" />
       <window_info anchor="bottom" id="Tail" order="14" />
       <window_info anchor="bottom" id="Messages" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -457,6 +458,20 @@
                 </list>
               </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
