@@ -230,7 +230,7 @@ Finally, run the container with the appropriate environment variables and port f
 
 ```bash
 $ docker run -d -e GOOGLE_EMAIL=steve@stevegattuso.me -e GOOGLE_PASSWORD=[password] \
--e APP_URL=http://alexa-geemusic.stevegattuso.me -p 5000:5000 geemusic
+-e APP_URL=http://alexa-geemusic.stevegattuso.me -p 5000:5000 goolexa
 ```
 
 At this point you're set up and ready.
