@@ -11,10 +11,11 @@ COPY . /goolexa
 WORKDIR /goolexa
 
 RUN pip3 install -U 'pip<10' && pip3 install -r requirements.txt \
- && gem install foreman
+ && gem install foreman && pip3 install ngrok
 
 EXPOSE 5000
 
 # Make sure to run with the GOOGLE_EMAIL, GOOGLE_PASSWORD, and APP_URL environment vars!
 ENTRYPOINT ["/usr/bin/dumb-init"]
+CMD ["ngrok", "http --bind-tls=true -subdomain=goolexa 5000"]
 CMD ["foreman", "start"]
