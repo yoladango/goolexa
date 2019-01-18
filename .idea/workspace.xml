@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7418d239-d99d-47d3-865e-c35c5b9b9cb1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Docker.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/pip-selfcheck.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +25,26 @@
     <SUITE FILE_PATH="coverage/goolexa$music.coverage" NAME="music Coverage Results" MODIFIED="1546986587561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/goolexa/utils" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -52,7 +68,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="2ed3f1fe1cad8ed57cce12da862036d9499a45be" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RESET_MODE" value="MIXED" />
@@ -62,21 +78,22 @@
       <list>
         <option value="$PROJECT_DIR$/.venv/.env" />
         <option value="$PROJECT_DIR$/speech_assets/interactionModel.json" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/goolexa/utils/music.py" />
         <option value="$PROJECT_DIR$/goolexa/intents/selection.py" />
         <option value="$USER_HOME$/.oh-my-zsh/custom/aliases.zsh" />
         <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/.txt" />
       </list>
     </option>
   </component>
   <component name="NamedScopeManager">
     <scope name="Goolexa" pattern="" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="160" />
-    <option name="y" value="153" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="186" />
+    <option name="y" value="169" />
     <option name="width" value="1382" />
     <option name="height" value="692" />
   </component>
@@ -86,7 +103,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -98,6 +114,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,7 +132,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547566229168" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547795186339" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Dockerfile" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
@@ -322,7 +339,8 @@
       <workItem from="1547550155423" duration="2836000" />
       <workItem from="1547569673264" duration="329000" />
       <workItem from="1547687122807" duration="968000" />
-      <workItem from="1547688948913" duration="8630000" />
+      <workItem from="1547688948913" duration="8825000" />
+      <workItem from="1547779869107" duration="2945000" />
     </task>
     <task id="LOCAL-00001" summary="polish">
       <created>1546941793581</created>
@@ -394,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1547566222569</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="get ready for dockerization">
+      <created>1547703939900</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1547703939900</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -427,7 +452,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45445000" />
+    <option name="totallyTimeSpent" value="48585000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -439,9 +464,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="160" y="153" width="1382" height="692" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1027" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4950166" visible="true" weight="0.39221558" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4950166" visible="true" weight="0.28441834" />
       <window_info id="Structure" order="1" sideWeight="0.50498337" side_tool="true" weight="0.25421885" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -458,11 +483,11 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4997281" weight="0.32962137" />
       <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49498117" weight="0.4870801" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.505988" side_tool="true" weight="0.59484345" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.61953044" side_tool="true" visible="true" weight="0.23234624" />
       <window_info anchor="bottom" id="Docker" order="10" sideWeight="0.49401197" weight="0.59484345" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.6182635" side_tool="true" visible="true" weight="0.3756906" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.61953044" side_tool="true" weight="0.23234624" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.38173652" visible="true" weight="0.3756906" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.3804696" visible="true" weight="0.23234624" />
       <window_info anchor="bottom" id="Tail" order="14" />
       <window_info anchor="bottom" id="Messages" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -535,7 +560,8 @@
     <MESSAGE value="works now" />
     <MESSAGE value="update readme.md" />
     <MESSAGE value="fixed a lot I think" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed a lot I think" />
+    <MESSAGE value="get ready for dockerization" />
+    <option name="LAST_COMMIT_MESSAGE" value="get ready for dockerization" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="setValue">
@@ -777,13 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.oh-my-zsh/custom/aliases.zsh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -795,6 +814,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
           <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="109" selection-start-column="109" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.venv/lib/python3.7/site-packages/ngrok-0.0.1.dist-info/top_level.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
