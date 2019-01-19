@@ -109,3 +109,4 @@ venv.bak/
 /.idea/pylint.xml
 /.gitignore
 !/.gitignore
+/.idea/workspace.xml
