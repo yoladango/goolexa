@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7418d239-d99d-47d3-865e-c35c5b9b9cb1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/goolexa/templates/en.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/goolexa/templates/en.yaml" afterDir="false" />
     </list>
@@ -29,19 +28,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
+        <entry file="file://$PROJECT_DIR$/goolexa/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/speech_assets/interactionModel.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4544">
-              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="18">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -50,7 +40,16 @@
         <entry file="file://$PROJECT_DIR$/goolexa/templates/en.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
-              <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
+              <caret line="1" column="109" selection-start-line="1" selection-start-column="109" selection-end-line="1" selection-end-column="109" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/speech_assets/interactionModel.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="370" column="13" lean-forward="true" selection-start-line="370" selection-start-column="13" selection-end-line="370" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -158,6 +157,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="goolexa" type="58d84e3e:PackageViewProjectNode" />
+              <item name="goolexa" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,18 +191,6 @@
               <item name="goolexa" type="b2602c69:ProjectViewProjectNode" />
               <item name="goolexa" type="462c0819:PsiDirectoryNode" />
               <item name="speech_assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="goolexa" type="58d84e3e:PackageViewProjectNode" />
-              <item name="goolexa" type="616d4139:PackageViewModuleNode" />
             </path>
           </expand>
           <select />
@@ -417,7 +416,9 @@
       <workItem from="1547841030276" duration="6623000" />
       <workItem from="1547847622846" duration="1051000" />
       <workItem from="1547848652514" duration="2175000" />
-      <workItem from="1547934526746" duration="259000" />
+      <workItem from="1547934526746" duration="1368000" />
+      <workItem from="1548036206238" duration="89000" />
+      <workItem from="1548036331613" duration="1162000" />
     </task>
     <task id="LOCAL-00001" summary="polish">
       <created>1546941793581</created>
@@ -557,7 +558,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61943000" />
+    <option name="totallyTimeSpent" value="64303000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -572,7 +573,7 @@
     <frame x="38" y="0" width="1883" height="1028" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4950166" visible="true" weight="0.20762943" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4950166" visible="true" weight="0.2119891" />
       <window_info id="Structure" order="1" sideWeight="0.50498337" side_tool="true" weight="0.25421885" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -589,11 +590,11 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49918255" weight="0.32921347" />
       <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49264306" weight="0.30674157" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.62288827" side_tool="true" visible="true" weight="0.22808988" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.6239782" side_tool="true" visible="true" weight="0.4292135" />
       <window_info anchor="bottom" id="Docker" order="10" sideWeight="0.49155313" weight="0.45403588" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.6223433" side_tool="true" weight="0.22808988" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.3771117" visible="true" weight="0.22808988" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.3760218" visible="true" weight="0.4292135" />
       <window_info anchor="bottom" id="Tail" order="14" />
       <window_info anchor="bottom" id="Messages" order="15" />
       <window_info anchor="bottom" id="Pylint" order="16" show_stripe_button="false" sideWeight="0.49809265" weight="0.32921347" />
@@ -892,13 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goolexa/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.venv/bin/easy_install-3.7">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -975,17 +969,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/goolexa/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/speech_assets/interactionModel.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4544">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state relative-caret-position="245">
+          <caret line="370" column="13" lean-forward="true" selection-start-line="370" selection-start-column="13" selection-end-line="370" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/goolexa/templates/en.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
+          <caret line="1" column="109" selection-start-line="1" selection-start-column="109" selection-end-line="1" selection-end-column="109" />
         </state>
       </provider>
     </entry>
