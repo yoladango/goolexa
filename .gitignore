@@ -110,3 +110,5 @@ venv.bak/
 /.gitignore
 !/.gitignore
 /.idea/workspace.xml
+/.idea/workspace.xml~dev
+.idea/workspace.xml~dev
