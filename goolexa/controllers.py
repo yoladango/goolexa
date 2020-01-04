@@ -28,7 +28,7 @@ def proxy_response(req):
         Params={
             "Bucket": BUCKET_NAME,
             "Key": file_name},
-        ExpiresIn=120
+        ExpiresIn=480
     )
     return redirect(url, 303)
 
